@@ -11,7 +11,7 @@ file(MAKE_DIRECTORY "out/images/nextpose")
 find_package( OpenCV REQUIRED )
 
 # add source files
-file(GLOB_RECURSE SOURCE_FILES "wizard_fisheye/*.cpp")
+file(GLOB_RECURSE SOURCE_FILES "src/*.cpp")
 
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 include_directories(${OpenCV_INCLUDE_DIRS})
